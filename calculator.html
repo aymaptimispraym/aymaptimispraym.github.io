@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<title>Calculator</title>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="csscalc.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="calc.js"></script>
+  
+ 
+
+
+  
+
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+
+
+
+      <div class="container-fluid">
+
+            <div class="navbar-header">
+
+                       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navekle">
+
+
+                            <span class="icon-bar"></span>
+
+                               <span class="icon-bar"></span>
+
+                               <span class="icon-bar"></span>
+
+                      </button>
+
+                               <a class="navbar-brand" href="index.html"><b><span class="glyphicon glyphicon-home"> </b></a>
+
+
+               </div>
+
+         <div class="collapse navbar-collapse" id="navekle">
+
+
+
+                       <ul class="nav navbar-nav ">
+
+                         <li> <a  href="index.html"> Home </a></li>
+
+                        <li> <a href="localdishes.html"> Local Dishes </a></li>
+
+                       <li> <a  href="historicalplaces.html"> Historical Places </a></li>
+
+                       <li> <a  href="usefullinks.html"> Useful Links</a></li>
+
+					   <li> <a  href="aboutme.html"> About Me </a></li>
+					   
+					   <li class="active"> <a class="navi" href="registration.html"> Registration </a></li>
+					   
+					   
+					   </ul>
+					   
+					   <ul class="nav navbar-nav navbar-right">
+					   
+					   <li> <a  href="contactme.html"><span class="glyphicon glyphicon-envelope"> Contact </span></a></li>
+					   
+                        </ul>
+
+           </div>
+
+    </div>
+
+</nav>
+
+
+</br>
+</br>
+</br>
+</br>
+
+<div align="center">
+
+<p class="anabaslik">Thanks for Registration and Enjoy the Calculator!:)</p>
+
+</div>
+
+
+</br>
+
+
+
+
+
+
+
+<div align="center">
+<div class="container-fluid">
+<div class="row-fluid">
+
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+<FORM NAME="calculator">
+
+<div align="center">
+
+<table style="background-color:#bac8c5;">
+<tr>
+	<th colspan=4><h1>Gizem's Calculator</h1></th>
+</tr>
+<tr>
+	<td colspan=4><input type="text" id="text1" placeholder="0" size="36" style="text-align:right;"/></td>
+	
+</tr>
+<tr>
+	<td style="padding: 20px 10px 5px 20px"><button class="c" type="button" value="" onClick="Reset()">C</button></td>
+	<td style="padding: 20px 10px 5px 5px"><button class="normal" type="button" value="" onClick="inverse()">1/x</button></td>
+	<td style="padding: 20px 10px 5px 5px"><button class="normal" type="button" value="" onClick="squareRoot()">x<sup>1/2</sup></button></td>
+	<td style="padding: 20px 20px 5px 5px"><button class="normal" type="button" value="/" onClick="Calculation(this.value)">/</button></td>
+	
+	
+</tr>
+<tr>
+	<td style="padding: 5px 10px 5px 20px"><button class="normal" type="button" value="7" onClick="Calculation(this.value)">7</button></td>
+	<td style="padding: 5px 10px 5px 5px"><button class="normal" type="button" value="8" onClick="Calculation(this.value)">8</button></td>
+	<td style="padding: 5px 10px 5px 5px"><button class="normal" type="button" value="9" onClick="Calculation(this.value)">9</button></td>
+	<td style="padding: 5px 20px 5px 5px"><button  class="normal" type="button" value="*"  onClick="Calculation(this.value)">*</button></td>
+	
+</tr>
+<tr>
+	<td style="padding: 5px 10px 5px 20px"><button class="normal" type="button" value="4" onClick="Calculation(this.value)">4</button></td>
+	<td style="padding: 5px 10px 5px 5px"><button class="normal" type="button" value="5" onClick="Calculation(this.value)">5</button></td>
+	<td style="padding: 5px 10px 5px 5px"><button class="normal" type="button" value="6" onClick="Calculation(this.value)">6</button></td>
+	<td style="padding: 5px 20px 5px 5px"><button class="normal" type="button" value="-"  onClick="Calculation(this.value)">-</button></td>
+</tr>
+<tr>
+	<td style="padding: 5px 10px 5px 20px"><button class="normal" type="button" value="1" onClick="Calculation(this.value)">1</button></td>
+	<td style="padding: 5px 10px 5px 5px"><button class="normal" type="button" value="2" onClick="Calculation(this.value)">2</button></td>
+	<td style="padding: 5px 10px 5px 5px"><button class="normal" type="button" value="3" onClick="Calculation(this.value)">3</button></td>
+	<td style="padding: 5px 20px 5px 5px"><button class="normal" type="button" value="+" onClick="Calculation(this.value)">+</td>
+	
+	
+</tr>
+<tr>
+	<td style="padding: 5px 10px 20px 20px" colspan=2><button class="zero" type="button" value="0" onClick="Calculation(this.value)">0</button></td>
+	<td style="padding: 5px 10px 20px 5px"><button class="normal" type="button"  value="." onClick="Calculation(this.value)">.</button></td>
+	<td style="padding: 5px 20px 20px 5px"><button class="eq" type="button" onClick="result()" >=</button></td>
+</tr>
+</table>
+
+
+</div>
+
+
+</FORM>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</br>
+</br>
+
+<div align="center">
+
+<a href="index.html"><img width="55" height="55" src="homeICON.png"></a>
+
+</div>
+
+</br>
+</br>
+</body>
+
+
+</html>
